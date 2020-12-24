@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="asset/img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="stylesheet" href="asset/css/owl.theme.default.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <title>Solve - Local Search, Social, News, Videos, Shopping</title>
+</head>
+
+<body>
+
+    <section class="navbar-section">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                
+                <a class="navbar-brand ml-4" href="index.html"><img src="asset/img/logo.png" class="img-fluid" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item highlight">
+                        <a class="nav-link" href="{{url('/free-listing')}}">Free Listing <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-bag text-warning"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="{{url('/advertise')}}">Advertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">English</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#login-modal">Login</a>
+
+                            <!-- Login Modal -->
+                            
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/sign-up')}}">Sign Up</a>
+                        </li>
+                        <!-- Dropdown Nave -->
+
+
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="edit-modal-Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+
+                            <div class="d-block">
+                                <a href="#">
+                                    <img src="asset/img/logo.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-dark">
+                            <p class="text-center">Login for Seamless experience</p>
+                            <form>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="loginName" aria-describedby="loginName" placeholder="Name">
+
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="loginNumber" placeholder="Mobile Number">
+                                </div>
+
+                                <button type="submit" class="btn btn-info">Send OTP</button>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="2nd-nav bg-light text-center font-weight-bold sticky-top">
+        <div class="container">
+            <div class=" d-flex flex-wrap justify-content-between align-items-center">
+        <span class="2nvi"><button class="btn btn-lg text-dark" id="navOpen"><i class="fas fa-bars"></i></button></span>
+        <span class="2nvi px-2">All Shops</span>
+        <span class="2nvi px-2">All Brands</span>
+        <span class="2nvi px-2">All Services</span>
+        <span class="2nvi px-2">Profile</span>
+        <span class="2nvi px-2">Help</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="nav-side-menu nav-closed" id="sideNav">
+                <h5 class=" pb-2 mb-2"><a href="#" class="text-light text-center bg-danger float-right p-2"  id="navClose"><i class="fas fa-times"></i> Close </a></h5>
+                <div id="jquery-accordion-menu" class="jquery-accordion-menu">
+                    <ul>
+                        <li class="active">
+                            <a href=""> Solve</a>
+                        </li>
+                        <li>
+                            
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog"></i>Services </a>
+                            <ul class="submenu">
+                            <li><a href="{{url('/moto-care')}}">
+                                Moto Care</a></li>
+                                <li><a href="#">Hosting </a></li>
+                                <li><a href="#">Design </a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Graphics </a></li>
+                                        <li><a href="#">Vectors </a></li>
+                                        <li><a href="#">Photoshop </a></li>
+                                        <li><a href="#">Fonts </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Consulting </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Categories </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Shops </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Brands </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        
+                </div>
+    </div>
+
+<!-- main body starts here-->
+
+<section class="body-section">
+    <div class="container">
+        <section class="product-section">
+            <div class="product-details">
+                <div class="row product-top-content">
+                    <div class="col-md-6">
+                        <!--                    <img src="product-img-1.jpg" class="img-fluid" alt="">-->
+                        <div class="xzoom-container">
+                            <img class="xzoom img-fluid" id="xzoom-default" src="asset/img/details/product-img-1-small.jpg" xoriginal="asset/img/details/product-img-1.jpg" />
+                            <div class="xzoom-thumbs">
+    
+                                <div class="owl-carousel owl-carousel-x-zoom owl-theme mt-2">
+                                    <div class="item">
+                                        <a href="asset/img/details/product-img-1.jpg"><img class="xzoom-gallery" width="80" src="asset/img/details/product-img-1-small.jpg" xpreview="asset/img/details/product-img-1-small.jpg" title="The description goes here"></a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="asset/img/details/product-img-2.jpg"><img class="xzoom-gallery" width="80" src="asset/img/details/product-img-2-small.jpg" xpreview="asset/img/details/product-img-2-small.jpg" title="The description goes here"></a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="asset/img/details/product-img-3.jpg"><img class="xzoom-gallery" width="80" src="asset/img/details/product-img-3-small.jpg" xpreview="asset/img/details/product-img-3-small.jpg" title="The description goes here"></a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="asset/img/details/product-img-4.jpg"><img class="xzoom-gallery" width="80" src="asset/img/details/product-img-4-small.jpg" xpreview="asset/img/details/product-img-4-small.jpg" title="The description goes here"></a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="asset/img/details/product-img-5.jpg"><img class="xzoom-gallery" width="80" src="asset/img/details/product-img-5-small.jpg" xpreview="asset/img/details/product-img-5-small.jpg" title="The description goes here"></a>
+                                    </div>
+    
+    
+    
+    
+    
+                                </div>
+    
+                            </div>
+                        </div>
+    
+    
+                    </div> <!-- //Col-md-6 End -->
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-between">
+                            <h5>EV-2732L Evton Fashion Backpack For Women</h5>
+                            <p class="mb-0"><a href="#"><i class="fas fa-share-alt"></i></a></p>
+                        </div>
+                        <div class="body-content">
+                            <ul class="list-unstyled">
+                                <li>SKU : <span>0X4C306</span></li>
+                                <li>BRAND : <span><a href="#" class="text-secondary">Individual Collections </a> | <a href="#" class="text-secondary">More Leather Backpack from Individual Collections</a></span></li>
+                            </ul>
+                            <hr>
+                            <p>৳ 2200 <span class="text-secondary">Starting price</span></p>
+    
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="qty">Quantity</label>
+                                    <select name="qty" id="qty" class="form-control">
+                                        <option value="Only 1">Only 1</option>
+                                        <option value="Only 2">Only 2</option>
+                                        <option value="Only 3">Only 3</option>
+                                        <option value="Only 4">Only 4</option>
+                                        <option value="Only 5">Only 5</option>
+                                        <option value="Only 6">Only 6</option>
+    
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#available-shop" class="btn btn-info d-block text-light bg-danger font-weight-bold border-0">Check Avaliable Shop</a>
+                        </div>
+    
+                        <div>
+                            <p>Have questions about this product (SKU: 0X2E615)</p>
+                            <h5 class="text-danger"> <span><i class="fas fa-shopping-cart fa-1x"></i></span> 09638111666</h5>
+                        </div>
+                        <hr>
+    
+                        <div class="content-bottom">
+                            <p>Specifications</p>
+    
+    
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">Brand:</th>
+                                        <td scope="col">Evton</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Color:</th>
+                                        <td scope="col">Black</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Material:</th>
+                                        <td scope="col">Leather</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Model Number:</th>
+                                        <td scope="col">Ev-2732L</td>
+    
+                                    </tr>
+    
+    
+                                </tbody>
+    
+                            </table>
+    
+    
+    
+                        </div>
+    
+    
+    
+                    </div> <!-- //Col-md-6 End -->
+                </div> <!-- //Main Row End -->
+    
+                <div class="available-shop" id="available-shop">
+                    <h3>Available Shop</h3>
+                    <div class="available-scroll">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="available-shop-div">
+                                    <div class="p-4">
+                                        <img src="asset/img/details/teciolk.jpg" class="img-fluid" alt="">
+                                        <p class="text-center font-weight-bold ">Teciolk</p>
+                                        <p class="text-center font-weight-bold text-warning mb-0"><span><i class="far fa-star"></i></span> <span><i class="far fa-star"></i></span> <span><i class="far fa-star"></i></span> <span><i class="far fa-star"></i></span> <span><i class="far fa-star"></i></span></p>
+    
+                                        <p class="text-center font-weight-bold">৳2200</p>
+    
+                                        <div class="cart-bottom text-center">
+                                            <div class="row">
+                                                <div class="col-md-6 pl-0 pr-0">
+                                                    <button type="button" class="btn btn-light w-100"><i class="far fa-comment"></i> Chat</button>
+                                                </div>
+                                                <div class="col-md-6 pl-0 pr-0">
+                                                    <button type="button" class="btn btn-danger w-100"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+                                                </div>
+    
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+    
+                </div> <!-- //Available Shop div End -->
+    
+                <div class="review p-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div style="line-height:300px">
+                                <h3 class="d-inline-block">No Reviews Yet!
+                                </h3>
+                            </div>
+    
+                        </div>
+                        <div class="col-md-6">
+                            <img src="asset/img/details/empty-review.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div> <!-- //Review div End -->
+    
+    
+                <div class="Related-Products">
+                    <div class="clearfix">
+                        <div class="float-left">
+                            <h3>Related Products</h3>
+                        </div>
+                        <div class="float-right">
+                            <div class="form-group mt-4">
+    
+                                <select name="list" id="list" class="form-control">
+                                    <option value="All">All</option>
+                                    <option value="Nearest">Nearest</option>
+    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="products-area">
+                        <div class="product-card">
+                             <div class="card">
+                                 <img class="card-img-top product-img img-fluid" src="asset/img/shop/productimg.jpg">
+                                 <div class="card-body p-1 text-center">
+                                   <h5 class="card-title text-secondary">Shumash Tech</h5>
+                                   <h5 class="card-text price text-dark"><span class="font-weight-bold">&#2547;</span> 2300</h5>
+                                   <button class="btn add-cart text-light bn"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="product-card">
+                             <div class="card">
+                                 <img class="card-img-top product-img img-fluid" src="asset/img/shop/productimg.jpg">
+                                 <div class="card-body p-1 text-center">
+                                   <h5 class="card-title text-secondary">Shumash Tech</h5>
+                                   <h5 class="card-text price text-dark"><span class="font-weight-bold">&#2547;</span> 2300</h5>
+                                     <button class="btn add-cart text-light bn"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="product-card">
+                             <div class="card">
+                                 <img class="card-img-top product-img img-fluid" src="asset/img/shop/productimg.jpg">
+                                 <div class="card-body p-1 text-center">
+                                   <h5 class="card-title text-secondary">Shumash Tech max pro lite</h5>
+                                   <h5 class="card-text price text-dark"><span class="font-weight-bold">&#2547;</span> 2300</h5>
+                                   <button class="btn add-cart text-light bn"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="product-card">
+                             <div class="card">
+                                 <img class="card-img-top product-img img-fluid" src="asset/img/shop/productimg.jpg">
+                                 <div class="card-body p-1 text-center">
+                                   <h5 class="card-title text-secondary">Shumash Tech</h5>
+                                   <h5 class="card-text price text-dark"><span class="font-weight-bold">&#2547;</span> 2300</h5>
+                                   <button class="btn add-cart text-light bn"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="product-card">
+                             <div class="card">
+                                 <img class="card-img-top product-img img-fluid" src="asset/img/shop/productimg.jpg">
+                                 <div class="card-body p-1 text-center">
+                                   <h5 class="card-title text-secondary">Shumash Tech</h5>
+                                   <h5 class="card-text price text-dark"><span class="font-weight-bold">&#2547;</span> 2300</h5>
+                                   <button class="btn add-cart text-light bn"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="product-card">
+                             <div class="card">
+                                 <img class="card-img-top product-img img-fluid" src="asset/img/shop/productimg.jpg">
+                                 <div class="card-body p-1 text-center">
+                                   <h5 class="card-title text-secondary">Shumash Tech max pro lite</h5>
+                                   <h5 class="card-text price text-dark"><span class="font-weight-bold">&#2547;</span> 2300</h5>
+                                   <button class="btn add-cart text-light bn"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+    
+    
+    
+                </div> <!-- //Related-Products div End -->
+    
+    
+    
+            </div> <!-- //Product Details End -->
+    
+    
+    
+    
+        </section>
+        
+        
+    </div>
+    </section>
+
+
+<!-- main body starts here-->
+
+<footer class="container-fluid bg-grey py-5">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 ">
+                   <div class="logo-part">
+                      <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer" >
+                      <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                      <p>Use this tool as test data for an automated system or find your next pen</p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4">
+                   <h6> About Company</h6>
+                   <p>But horizontal lines can only be a full pixel high.</p>
+                   <a href="#" class="btn-footer"> More Info </a><br>
+                   <a href="#" class="btn-footer"> Contact Us</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 px-4">
+                   <h6> Help us</h6>
+                   <div class="row ">
+                      <div class="col-md-6">
+                         <ul>
+                            <li> <a href="#"> Home</a> </li>
+                            <li> <a href="#"> About</a> </li>
+                            <li> <a href="#"> Service</a> </li>
+                            <li> <a href="#"> Team</a> </li>
+                            <li> <a href="#"> Help</a> </li>
+                            <li> <a href="#"> Contact</a> </li>
+                         </ul>
+                      </div>
+                      <div class="col-md-6 px-4">
+                         <ul>
+                            <li> <a href="#"> Cab Faciliy</a> </li>
+                            <li> <a href="#"> Fax</a> </li>
+                            <li> <a href="#"> Terms</a> </li>
+                            <li> <a href="#"> Policy</a> </li>
+                            <li> <a href="#"> Refunds</a> </li>
+                            <li> <a href="#"> Paypal</a> </li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6 ">
+                   <h6> Newsletter</h6>
+                   <div class="social">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   </div>
+                   <form class="form-footer my-3">
+                      <input type="text"  placeholder="search here...." name="search">
+                      <input type="button" value="Go" >
+                   </form>
+                   <p>That's technology limitation of LCD monitors</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</footer>
+
+<!---------------- Always Display Fix Div ------------------->
+
+<!--<div class="fix-right-div">
+    <a href="advertise.htm">Advertise</a>
+    <a href="#">Customer Care</a>
+    <a href="sign-up.htm">Sign Up</a>
+
+</div>-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="asset/js/owl.carousel.min.js"></script>
+<script src="asset/js/main.js"></script>
+<script src="asset/js/xzoom.min.js"></script>
+    <script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js'></script>
+
+</body>
+</html>

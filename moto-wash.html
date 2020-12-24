@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="asset/img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="stylesheet" href="asset/css/owl.theme.default.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <title>Solve - Local Search, Social, News, Videos, Shopping</title>
+</head>
+
+<body>
+
+    <section class="navbar-section">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                
+                <a class="navbar-brand ml-4" href="index.html"><img src="asset/img/logo.png" class="img-fluid" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item highlight">
+                        <a class="nav-link" href="{{url('/free-listing')}}">Free Listing <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-bag text-warning"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="{{url('/advertise')}}">Advertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">English</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#login-modal">Login</a>
+
+                            <!-- Login Modal -->
+                            
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/sign-up')}}">Sign Up</a>
+                        </li>
+                        <!-- Dropdown Nave -->
+
+
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="edit-modal-Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+
+                            <div class="d-block">
+                                <a href="#">
+                                    <img src="asset/img/logo.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-dark">
+                            <p class="text-center">Login for Seamless experience</p>
+                            <form>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="loginName" aria-describedby="loginName" placeholder="Name">
+
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="loginNumber" placeholder="Mobile Number">
+                                </div>
+
+                                <button type="submit" class="btn btn-info">Send OTP</button>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="2nd-nav bg-light text-center font-weight-bold sticky-top">
+        <div class="container">
+            <div class=" d-flex flex-wrap justify-content-between align-items-center">
+        <span class="2nvi"><button class="btn btn-lg text-dark" id="navOpen"><i class="fas fa-bars"></i></button></span>
+        <span class="2nvi px-2">All Shops</span>
+        <span class="2nvi px-2">All Brands</span>
+        <span class="2nvi px-2">All Services</span>
+        <span class="2nvi px-2">Profile</span>
+        <span class="2nvi px-2">Help</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="nav-side-menu nav-closed" id="sideNav">
+                <h5 class=" pb-2 mb-2"><a href="#" class="text-light text-center bg-danger float-right p-2"  id="navClose"><i class="fas fa-times"></i> Close </a></h5>
+                <div id="jquery-accordion-menu" class="jquery-accordion-menu">
+                    <ul>
+                        <li class="active">
+                            <a href=""> Solve</a>
+                        </li>
+                        <li>
+                            
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog"></i>Services </a>
+                            <ul class="submenu">
+                            <li><a href="{{url('/moto-care')}}">
+                                Moto Care</a></li>
+                                <li><a href="#">Hosting </a></li>
+                                <li><a href="#">Design </a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Graphics </a></li>
+                                        <li><a href="#">Vectors </a></li>
+                                        <li><a href="#">Photoshop </a></li>
+                                        <li><a href="#">Fonts </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Consulting </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Categories </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Shops </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Brands </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        
+                </div>
+    </div>
+
+<!-- main body starts here-->
+
+<section class="subtitle-inner">
+    <div class="container">
+
+        <div class="shortByResult">
+            <ul class=" mb-0 list-unstyled d-flex justify-content-between">
+                <li>Short Result By :</li>
+                <li><a href="#">Top Result</a></li>
+                <li><a href="#">Popularity</a></li>
+                <li>
+                    <div class="dropdown">
+                        <span class=" dropdown-toggle" id="distance-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Distance
+                        </span>
+                        <div class="dropdown-menu" aria-labelledby="distance-dropdown">
+                            <a class="dropdown-item" href="#">2km</a>
+                            <a class="dropdown-item" href="#">4km</a>
+                            <a class="dropdown-item" href="#">6km</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Location</a>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <div class="div">
+                        <ul class="list-unstyled">
+                            <li><a href="#"> Car Repair & Services</a></li>
+                            <hr>
+                            <li><a href="">Car Repair & Services near me</a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="div">
+                        <h6 class="font-weight-bold">Popular Area</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#"> Car Repair & Services in West Tripura</a></li>
+                            <li><a href=""> Car Repair & Services in Kalyani</a></li>
+                            <li><a href=""> Car Repair & Services in Krishna Nagar</a></li>
+                            <li><a href="#"> Car Repair & Services in Agartala Guard</a></li>
+                            <li><a href=""> Car Repair & Services in Siddhi Ashram</a></li>
+                            <li><a href=""> Car Repair & Services in Khowai</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="div">
+                        <h6 class="font-weight-bold">Also use for:</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#"> Placement Services (Candidate)</a></li>
+                            <li><a href=""> Bus Services</a></li>
+                            <li><a href=""> Transporters</a></li>
+                            <li><a href="#"> Car Hire</a></li>
+                            <li><a href=""> Beauty Spas</a></li>
+                            <li><a href=""> Car Repair & Services in Khowai</a></li>
+                            <li><a href="" class="font-weight-bold text-dark text-center"> See More</a></li>
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-7 product-des">
+                <div class="row border-bottom pt-2 pb-2 mt-2 mb-2">
+
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img src="asset/img/category-page/moto-wash.jpg" class="img-fluid rounded" alt="image">
+                        </a>
+
+                    </div>
+
+
+                    <div class="col-md-6 ">
+                        <a href="hind-motor.htm">
+                            <h5 class="text-dark">Hind Motors </h5>
+                            <ul class="list-unstyled">
+                                <li class="text-warning"><span class="text-light p-1 bg-success">3.5</span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span> <span class="text-primary ">44 votes</span></li>
+                                <li><span><i class="fas fa-phone-volume"></i></span> +(91)-8132993741</li>
+                                <li><span><i class="fas fa-map-marked-alt"></i></span> Agartala, ...| <span class=" " data-toggle="tooltip" data-placement="bottom" title="National Highway 44, East Champamura, Agartala, West Tripura - 799008">
+                                        More
+                                    </span>
+
+                                </li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> Car Repair & Services</li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> OPEN NOW</li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> Get Quotes</li>
+
+
+                            </ul>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="row border-bottom pt-2 pb-2 mt-2 mb-2">
+
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img src="asset/img/category-page/moto-wash.jpg" class="img-fluid rounded" alt="image">
+                        </a>
+
+                    </div>
+
+
+                    <div class="col-md-6 ">
+                        <a href="#">
+                            <h5 class="text-dark">Hind Motors </h5>
+                            <ul class="list-unstyled">
+                                <li class="text-warning"><span class="text-light p-1 bg-success">3.5</span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span> <span class="text-primary ">44 votes</span></li>
+                                <li><span><i class="fas fa-phone-volume"></i></span> +(91)-8132993741</li>
+                                <li><span><i class="fas fa-map-marked-alt"></i></span> Agartala, ...| <span class=" " data-toggle="tooltip" data-placement="bottom" title="National Highway 44, East Champamura, Agartala, West Tripura - 799008">
+                                        More
+                                    </span>
+
+                                </li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> Car Repair & Services</li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> OPEN NOW</li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> Get Quotes</li>
+
+                            </ul>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="row border-bottom pt-2 pb-2 mt-2 mb-2">
+
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img src="asset/img/category-page/moto-wash.jpg" class="img-fluid rounded" alt="image">
+                        </a>
+
+                    </div>
+
+
+                    <div class="col-md-6 ">
+                        <a href="hind-motor.htm">
+                            <h5 class="text-dark">Hind Motors </h5>
+                            <ul class="list-unstyled">
+                                <li class="text-warning"><span class="text-light p-1 bg-success">3.5</span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span> <span class="text-primary ">44 votes</span></li>
+                                <li><span><i class="fas fa-phone-volume"></i></span> +(91)-8132993741</li>
+                                <li><span><i class="fas fa-map-marked-alt"></i></span> Agartala, ...| <span class=" " data-toggle="tooltip" data-placement="bottom" title="National Highway 44, East Champamura, Agartala, West Tripura - 799008">
+                                        More
+                                    </span>
+
+                                </li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> Car Repair & Services</li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> OPEN NOW</li>
+                                <li> <span><i class="fas fa-chevron-right"></i></span> Get Quotes</li>
+
+                            </ul>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- main body starts here-->
+
+<footer class="container-fluid bg-grey py-5">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 ">
+                   <div class="logo-part">
+                      <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer" >
+                      <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                      <p>Use this tool as test data for an automated system or find your next pen</p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4">
+                   <h6> About Company</h6>
+                   <p>But horizontal lines can only be a full pixel high.</p>
+                   <a href="#" class="btn-footer"> More Info </a><br>
+                   <a href="#" class="btn-footer"> Contact Us</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 px-4">
+                   <h6> Help us</h6>
+                   <div class="row ">
+                      <div class="col-md-6">
+                         <ul>
+                            <li> <a href="#"> Home</a> </li>
+                            <li> <a href="#"> About</a> </li>
+                            <li> <a href="#"> Service</a> </li>
+                            <li> <a href="#"> Team</a> </li>
+                            <li> <a href="#"> Help</a> </li>
+                            <li> <a href="#"> Contact</a> </li>
+                         </ul>
+                      </div>
+                      <div class="col-md-6 px-4">
+                         <ul>
+                            <li> <a href="#"> Cab Faciliy</a> </li>
+                            <li> <a href="#"> Fax</a> </li>
+                            <li> <a href="#"> Terms</a> </li>
+                            <li> <a href="#"> Policy</a> </li>
+                            <li> <a href="#"> Refunds</a> </li>
+                            <li> <a href="#"> Paypal</a> </li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6 ">
+                   <h6> Newsletter</h6>
+                   <div class="social">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   </div>
+                   <form class="form-footer my-3">
+                      <input type="text"  placeholder="search here...." name="search">
+                      <input type="button" value="Go" >
+                   </form>
+                   <p>That's technology limitation of LCD monitors</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</footer>
+
+<!---------------- Always Display Fix Div ------------------->
+
+<!--<div class="fix-right-div">
+    <a href="advertise.htm">Advertise</a>
+    <a href="#">Customer Care</a>
+    <a href="sign-up.htm">Sign Up</a>
+
+</div>-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="asset/js/owl.carousel.min.js"></script>
+<script src="asset/js/main.js"></script>
+<script src="asset/js/xzoom.min.js"></script>
+    <script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="asset/img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="stylesheet" href="asset/css/owl.theme.default.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <title>Solve - Local Search, Social, News, Videos, Shopping</title>
+</head>
+
+<body>
+
+    <section class="navbar-section">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                
+                <a class="navbar-brand ml-4" href="index.html"><img src="asset/img/logo.png" class="img-fluid" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item highlight">
+                        <a class="nav-link" href="{{url('/free-listing')}}">Free Listing <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-bag text-warning"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="{{url('/advertise')}}">Advertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">English</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#login-modal">Login</a>
+
+                            <!-- Login Modal -->
+                            
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/sign-up')}}">Sign Up</a>
+                        </li>
+                        <!-- Dropdown Nave -->
+
+
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="edit-modal-Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+
+                            <div class="d-block">
+                                <a href="#">
+                                    <img src="asset/img/logo.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-dark">
+                            <p class="text-center">Login for Seamless experience</p>
+                            <form>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="loginName" aria-describedby="loginName" placeholder="Name">
+
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="loginNumber" placeholder="Mobile Number">
+                                </div>
+
+                                <button type="submit" class="btn btn-info">Send OTP</button>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="2nd-nav bg-light text-center font-weight-bold sticky-top">
+        <div class="container">
+            <div class=" d-flex flex-wrap justify-content-between align-items-center">
+        <span class="2nvi"><button class="btn btn-lg text-dark" id="navOpen"><i class="fas fa-bars"></i></button></span>
+        <span class="2nvi px-2">All Shops</span>
+        <span class="2nvi px-2">All Brands</span>
+        <span class="2nvi px-2">All Services</span>
+        <span class="2nvi px-2">Profile</span>
+        <span class="2nvi px-2">Help</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="nav-side-menu nav-closed" id="sideNav">
+                <h5 class=" pb-2 mb-2"><a href="#" class="text-light text-center bg-danger float-right p-2"  id="navClose"><i class="fas fa-times"></i> Close </a></h5>
+                <div id="jquery-accordion-menu" class="jquery-accordion-menu">
+                    <ul>
+                        <li class="active">
+                            <a href=""> Solve</a>
+                        </li>
+                        <li>
+                            
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog"></i>Services </a>
+                            <ul class="submenu">
+                            <li><a href="{{url('/moto-care')}}">
+                                Moto Care</a></li>
+                                <li><a href="#">Hosting </a></li>
+                                <li><a href="#">Design </a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Graphics </a></li>
+                                        <li><a href="#">Vectors </a></li>
+                                        <li><a href="#">Photoshop </a></li>
+                                        <li><a href="#">Fonts </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Consulting </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Categories </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Shops </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase"></i>Brands </a>
+                            <ul class="submenu">
+                                <li><a href="#">Web Design </a></li>
+                                <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Programming </a></li>
+                            </ul>
+                        </li>
+                        
+                </div>
+    </div>
+
+<!-- main body starts here-->
+<section class="bkash">
+    <div class="container">
+        <div class="text-center mt-4 mb-4">
+            <h3 class="text-info font-weight-bold text-uppercase">Bkash Payment System</h3>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+
+                <div class="text-center mt-4 mb-4">
+                    <h4 class="text-success">How can you send Bkash payment using your personal Bkash account</h4>
+                </div>
+
+                <div>
+                    <p>We have our personal Bkash account. We accept from all of your Bkash account personal or merchant bikash number. You can send us payment via your personal Bkash or go to any nearest Bkash agent and send us your packages amount money to our Bkash number.</p>
+                </div>
+
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="font-weight-bold">(Please add extra 2% Bkash charge with your amount with bill)</li>
+                        <li class="font-italic mb-2">To send us payment using your personal account, use the following steps-</li>
+                        <li>01 - Go to bKash Mobile Menu by dialing *247#</li>
+                        <li>02 - Choose “Send Money”</li>
+                        <li>03 - Enter our bKash Account Number 017*******</li>
+                        <li>04 - Enter the amount you want to send</li>
+                        <li>05 - Enter a reference about the transaction. (Do not use more than one word, avoid space or special characters)</li>
+                        <li>06 - Now enter your bKash Mobile Menu PIN to confirm the transaction</li>
+                        <li class="font-weight-bold">Done! You will receive confirmation message from bKash.</li>
+
+                    </ul>
+
+                    <p class="text-center">For more about this information or view demo <a href="http://www.bkash.com/products-services/send-money">go here.</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+
+                <div class="text-center mt-4 mb-4">
+                    <h2 class="text-success">How can you send Bkash payment using your merchant bKash Account</h4>
+                </div>
+
+                <div>
+                    <p>We have our personal Bkash account. We accept from all of your Bkash account personal or merchant bikash number. You can send us payment via your personal Bkash or go to any nearest Bkash agent and send us your packages amount money to our Bkash number.</p>
+                </div>
+
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="font-weight-bold">(Please add extra 2% Bkash charge with your amount with bill)</li>
+                        <li class="font-italic mb-2">To send us payment using your personal account, use the following steps-</li>
+                        <li>01 - Go to bKash Mobile Menu by dialing *247#</li>
+                        <li>02 - Choose “Payment”</li>
+                        <li>03 - Enter Our Merchant bKash Account Number: 0184*******</li>
+                        <li>04 - Enter the amount you want to pay</li>
+                        <li>05 - Enter a reference against your payment (your reference must be your invoice number)</li>
+                        <li>06 - Enter the Counter Number: 0</li>
+                        <li>07 - Now enter your bKash Mobile Menu PIN to confirm</li>
+
+                        <li class="font-weight-bold">Done! You will receive confirmation message from bKash.</li>
+
+                    </ul>
+
+                    <p class="text-center">For more about this information or view demo <a href="http://www.bkash.com/products-services/send-money">go here.</a></p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        <div class="">
+
+
+            <!-- Form -->
+
+            <div class="bkash-form">
+                <div class="text-center mt-4 mb-4">
+                    <h4 class="text-success">After send payment please fill up the form.</h4>
+                    <hr>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control mt-2 mb-2 form-control-lg" id="FullName" aria-describedby="FullName" placeholder="Enter Your Full Name">
+
+                        <input type="email" class="form-control mt-2 mb-2 form-control-lg" id="bkash-email" aria-describedby="bkash-email" placeholder="Enter Your Email">
+                        <input type="text" class="form-control mt-2 mb-2 form-control-lg" id="phonenumber" aria-describedby="phonenumber" placeholder="Enter Your Phone Number">
+                        <input type="text" class="form-control mt-2 mb-2 form-control-lg" id="bkash-TrxID" aria-describedby="bkash-TrxID" placeholder="Enter the Bkash TrxID">
+
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-lg btn-info ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section>
+
+
+
+<!-- main body starts here-->
+
+<footer class="container-fluid bg-grey py-5">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 ">
+                   <div class="logo-part">
+                      <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer" >
+                      <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                      <p>Use this tool as test data for an automated system or find your next pen</p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4">
+                   <h6> About Company</h6>
+                   <p>But horizontal lines can only be a full pixel high.</p>
+                   <a href="#" class="btn-footer"> More Info </a><br>
+                   <a href="#" class="btn-footer"> Contact Us</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 px-4">
+                   <h6> Help us</h6>
+                   <div class="row ">
+                      <div class="col-md-6">
+                         <ul>
+                            <li> <a href="#"> Home</a> </li>
+                            <li> <a href="#"> About</a> </li>
+                            <li> <a href="#"> Service</a> </li>
+                            <li> <a href="#"> Team</a> </li>
+                            <li> <a href="#"> Help</a> </li>
+                            <li> <a href="#"> Contact</a> </li>
+                         </ul>
+                      </div>
+                      <div class="col-md-6 px-4">
+                         <ul>
+                            <li> <a href="#"> Cab Faciliy</a> </li>
+                            <li> <a href="#"> Fax</a> </li>
+                            <li> <a href="#"> Terms</a> </li>
+                            <li> <a href="#"> Policy</a> </li>
+                            <li> <a href="#"> Refunds</a> </li>
+                            <li> <a href="#"> Paypal</a> </li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6 ">
+                   <h6> Newsletter</h6>
+                   <div class="social">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   </div>
+                   <form class="form-footer my-3">
+                      <input type="text"  placeholder="search here...." name="search">
+                      <input type="button" value="Go" >
+                   </form>
+                   <p>That's technology limitation of LCD monitors</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</footer>
+
+<!---------------- Always Display Fix Div ------------------->
+
+<!--<div class="fix-right-div">
+    <a href="advertise.htm">Advertise</a>
+    <a href="#">Customer Care</a>
+    <a href="sign-up.htm">Sign Up</a>
+
+</div>-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="asset/js/owl.carousel.min.js"></script>
+<script src="asset/js/main.js"></script>
+<script src="asset/js/xzoom.min.js"></script>
+    <script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js'></script>
+
+</body>
+</html>
